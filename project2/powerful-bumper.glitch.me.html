@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-size: 16px;
+      }
+
+      #myGrid {
+        margin:100px;
+        
+        /* make it a grid */
+        display: grid;
+      
+        /* define the cells of the grid */
+        /* change these numbers   👇🏻  or units (like 100px or 2fr)*/
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        
+        /* grid gutter */
+        grid-gap: 20px;
+
+      }
+
+      p {
+        /* style our text */
+        font-size: 0.91em;
+        line-height: 1.3em;
+        
+        margin:0;
+        padding:1em;
+        
+        background: lightgreen;
+      }
+      
+      /* this selects every p that follows a p in the same parent */
+      p ~ p {
+         background:pink;
+      }
+      
+      #myGrid div {
+        background: cyan;
+      }
+
+
+      h1 {
+        /* set the h1 to span 2 columns */
+        grid-column: span 2; 
+        
+        margin: 0;
+        font-size:25px;
+        line-height:1.3em;
+      }
+
+      img {
+        width:100%; 
+      }
+      
+      .inline-image {
+        /* float the inline image, and style it */
+        max-width: 33%;
+        float: right;
+        padding: 15px;
+        margin: 0 0 0 15px;
+        background: white;
+      }
+      
+      a {
+        /* style links */
+        color:hotpink; 
+        text-decoration: none;
+      }
+      
+    </style>
+  </head>
+  <body>    
+  <div id="myGrid">
+    <h1>
+      download this <a href="https://powerful-bumper.glitch.me/" download>page ⬇️</a> into your class site as "project 2 exercise 1"
+    </h1>
+    
+    <p>
+      check out <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">this grid reference</a>, and here's the <a href="http://spring2018.will.graphics/static/lectures/5.html">lecture</a>. try out this page at different sizes.
+      <br><br>
+      <strong>make the left column half as big as the others</strong>
+    </p>
+    
+    <p>
+      <img class="inline-image" src="https://cdn.glitch.com/1719fec4-0c8e-4bdd-a058-4a9618dece2e%2Fcat.jpg?1517191861033">
+      <strong>make this grid 3 columns, while keeping the header alone on the first row</strong>
+      <br><br>
+      <strong>make this image sit to the left of the text 👉🏻</strong>
+    </p>
+    <p>
+      <strong>Make this box two columns wide.</strong>
+      <br><br>
+      Morbi risus purus, tincidunt eu enim quis, varius dictum turpis. Donec orci ante, faucibus at neque ac, euismod accumsan erat. Vestibulum nisi nisi, bibendum in tincidunt sed, pulvinar non massa. Cras et mollis nunc. Ut at ornare ligula. Aenean semper aliquet congue. Nunc varius turpis in vestibulum hendrerit. Integer sit amet faucibus neque, vitae commodo quam. Integer tempor auctor ante, sit amet dictum tortor ultricies in.
+    </p>
+    
+    <img src="https://cdn.glitch.com/9da2d04c-f441-4bba-9424-7a62ae9a19c4%2Fmoonlanding.png?1518079708582">
+    
+    <p>
+      <strong>put an empty cell before this one</strong>
+    </p>
+    
+    <p>
+      <strong>make the paragraphs after the one you hover over change color, with a transition</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">css transitions reference</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">selectors reference</a>, check out the 'general sibling selector'
+      <br><br>
+      <strong>make link color animate</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">css animation reference</a>
+      <br><br>
+      <strong>make a copy of this page and see how closely you can replicate the layout of the moon landing front page using css grids or floats.</strong> don't worry about the content, you can use dummy images and text
+    </p>
+    
+    <div style="width: 100%; height: 50px">
+      
+    </div>
+    
+    <!-- what happens if you add more elements? -->
+</div>
+  </body>
+</html>
