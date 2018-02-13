@@ -34,6 +34,7 @@
         /* style our text */
         font-size: 0.91em;
         line-height: 1.3em;
+        position: center;
 
         margin:0;
         padding:1em;
@@ -83,11 +84,21 @@ hr{
 h2{
   grid-row: span 2;
   grid-column: span 4;
-  font-size: 63pt;
+  font-size: 75pt;
   margin: -10px 0px;
 
 }
+h3{
+  grid-row: span 2;
+  grid-column: span 4;
+  font-size: 30pt;
+  margin: -10px 0px;
+  padding-bottom: 10px;
 
+}
+h4{
+  position: relative;
+}
       img {
         width:100%;
       }
@@ -127,7 +138,6 @@ h2{
     <h1>
       THE WASHINGTON POST
     </h1>
-
     <p>
       check out <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">this grid reference</a>, and here's the <a href="http://spring2018.will.graphics/static/lectures/5.html">lecture</a>. try out this page at different sizes.
       <br><br>
@@ -151,7 +161,7 @@ h2{
 
 <div id="long">
 
-      <h2> 'A BIG IMPORTANT THING TO STARE AT' </h2>
+      <h3> 'A BIG IMPORTANT THING TO STARE AT' </h3>
       <strong>make the paragraphs after the one you hover over change color, with a transition</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">css transitions reference</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">selectors reference</a>, check out the 'general sibling selector'
       <br><br>
       <strong>make link color animate</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">css animation reference</a>
