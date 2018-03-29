@@ -1,0 +1,115 @@
+
+body {
+  font-size: 12px;
+  line-height:2em;
+  font-family:Menlo, monospace;
+}
+
+
+#myGrid {
+  margin:100px;
+
+  /* make it a grid */
+  display: grid;
+
+  /* define the cells of the grid */
+  /* change these numbers   👇🏻  or units (like 100px or 2fr)*/
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  /* grid gutter */
+  grid-gap: 20px;
+
+}
+
+
+@media(min-width: 1000px){
+  #myGrid {
+  grid-template-columns: 1fr 1fr 1fr;
+
+
+  }
+}
+p, .code {
+  /* style our text */
+  font-size: 0.91em;
+  line-height: 1.3em;
+
+  margin:0;
+  padding:1em;
+
+  background: lightgreen;
+}
+
+/* this selects every p that follows a p in the same parent */
+
+#myGrid div {
+  background: lightgreen;
+}
+
+#myGrid .empty {
+  background: pink;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin: 20px;
+  font-size:16px;
+}
+@media(max-width: 700px){
+  #myGrid {
+  grid-template-columns: 1fr;
+  font-size: 10px;
+
+
+  }
+  h1 {
+    font-size: 10px;
+
+  }
+
+
+}
+
+.spoopy{
+  display: none;
+}
+@media print {
+  #myGrid {
+  grid-template-columns: 1fr 1fr;
+  font-size: 8px;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 5px;
+
+
+  }
+
+  .spoopy{
+    display: block;
+  }
+  #myGrid .empty {
+    display: none;
+  }
+}
+img {
+  width:100%;
+}
+
+
+a {
+  /* style links */
+  color:hotpink;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+#poem {
+  font-style:italic;
+  font-size:15px;
+  text-align:center;
+}
