@@ -119,7 +119,7 @@ image : 'tweet20.png',
 reviewed : false,
 badness : 0.5,
 review : undefined
-},
+}
 ]
 
 let currentTweet = 0
@@ -177,14 +177,14 @@ function goToTheEnd(){
   avgBadness = totalBadness / tweets.length
   console.log(avgBadness)
 
-  for(let i = 0; i < otherTweets.length; i++){
-    if(otherTweets[i].badness < avgBadness){
-      console.log('its all goooood')
-      // pront.innerHTML += "<h1>" + tweets[currentTweet].text + " " + tweets[currentTweet].review + "</h1>"
-    } else {
-      console.log('ban the fuckers')
-    }
-  }
+  // for(let i = 0; i < otherTweets.length; i++){
+  //   if(otherTweets[i].badness < avgBadness){
+  //     console.log('Allow')
+  //     // pront.innerHTML += "<h1>" + tweets[currentTweet].text + " " + tweets[currentTweet].review + "</h1>"
+  //   } else {
+  //     console.log('Suspend')
+  //   }
+  // }
 
 
 
