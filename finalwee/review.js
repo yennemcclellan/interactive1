@@ -165,6 +165,7 @@ printButton.addEventListener('mouseup',function(){
 function goToTheEnd(){
   console.log('THE END')
 
+  buttonBox.style.display = "none"
 
   let avgBadness = 0
   let totalBadness = 0
@@ -177,15 +178,78 @@ function goToTheEnd(){
   avgBadness = totalBadness / tweets.length
   console.log(avgBadness)
 
-  // for(let i = 0; i < otherTweets.length; i++){
-  //   if(otherTweets[i].badness < avgBadness){
-  //     console.log('Allow')
-  //     // pront.innerHTML += "<h1>" + tweets[currentTweet].text + " " + tweets[currentTweet].review + "</h1>"
-  //   } else {
-  //     console.log('Suspend')
-  //   }
-  // }
+  let otherTweets= [
+    {
+     text: "I hate people who are complicit with harrassment. Especially those who then blame victims. 👏 your condescending tone can be taken somewhere else 👏",
+     badness : 0,
+   },
+   {
+     text: "I like it when girls lick my butthole....its a life changing feeling",
+     badness : 0.4,
+   },
+   {
+     text: "The creepiest gay men are short, old asian men with long nails. Fact.",
+      badness : 0.6,
+   },
+   {
+     text: "My boy don't love me like he promised",
+     badness : 0,
+   },
 
+   {
+     text : "My step brother is insufferable why do i have to associate with him",
+     badness : 0.2,
+   },
+   {
+     text: "vegetarian food is uh. so fucking good",
+     badness: 0.1,
+   },
+   {
+     text: "bring back my...will to live",
+     badness: 0.3,
+   },
+   {
+     text: "I wanna die but if I kill myself everyone will make fun of me",
+     badness: 0.4,
+   },
+   {
+     text: "I can't believe we're going to Africa today omg what if we get Ebola? James we're fine we could've gotten it at chipotle last year...",
+     badness: 0.5,
+   },
+   {
+     text: "BLACK LIVES MATTER! - What the fuck is a black life???? Last time I checked, we're all just people",
+     badness: 0.8,
+   },
+   {
+     text: "Trump has blocked me from reading his tweets. I may have to kill myself",
+     badness: 0.3,
+   },
+   {
+     text: "Going to Africa. Hope I don't get AIDS. Just kidding. I'm white!",
+     badness: 0.9,
+   },
+   {
+     text: "I wish we could just kick them all out this country. This is England. Keep it that way",
+     badness: 0.6,
+   }
+
+ ]
+
+ let goodHTML = ''
+ let badHTML = ''
+ for(let i = 0; i < otherTweets.length; i++){
+    if(otherTweets[i].badness < avgBadness){
+       console.log('Allow')
+       console.log(otherTweets[i])
+        goodHTML += "<p>" + otherTweets[i].text + " " + otherTweets[i].badness + "</p>"
+   } else {
+      console.log('Suspend')
+      console.log(otherTweets[i])
+       badHTML += "<p>" + otherTweets[i].text + " " + otherTweets[i].badness + "</p>"
+     }
+  }
+
+pront.innerHTML = "<h2>ALLOWED</h2>" + goodHTML +  "<h2>SUSPENDED</h2>" + badHTML
 
 
 

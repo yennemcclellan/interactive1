@@ -1,7 +1,47 @@
+
+
 #screen {
   display:none;
 }
 
 h1 {
-  color:white;
+  color: white;
+  background-color: #98CCE5;
+  font-family: Helvetica;
+  font-size:15pt;
+  text-align: left;
+  width: 270pt;
+}
+h2{
+  color: white;
+  font-family: Helvetica;
+  font-size: 25pt;
+  font-style: bolder;
+  line-height: 7pt;
+
+
+}
+p{
+  color: white;
+  font-family: Helvetica;
+  font-size: 14pt;
+  width: 5in;
+}
+
+#nope{
+  font-family: Helvetica;
+  text-align: left;
+  font-style: bold;
+}
+
+#yep{
+  font-family: Helvetica;
+  text-align: left;
+  font-style: bold;
+}
+
+body {
+  background: #98CCE5;
+  width: 8.5in;
+  height: 11in;
 }

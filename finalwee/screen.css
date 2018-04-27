@@ -10,11 +10,14 @@ h1{
 
 }
 
+
 body{
   background-color: #99CBE7;
-  margin-top: 120pt;
-  margin-left: 230pt;
 
+  display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
 }
 
 #suspend{
@@ -42,4 +45,10 @@ body{
 
 #pront {
   display: none;
+}
+
+#tweetViewer {
+  width: 500pt;
+  margin: auto;
+
 }
