@@ -1,5 +1,6 @@
 * {
   user-select: none;
+  -webkit-user-select: none;
 }
 h1{
   font-family: Helvetica;
@@ -45,7 +46,9 @@ body{
 
 #pront {
   display: none;
+  column-count: 2;
 }
+
 
 #tweetViewer {
   width: 500pt;

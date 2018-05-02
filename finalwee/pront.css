@@ -21,11 +21,13 @@ h2{
 
 
 }
+
 p{
   color: white;
   font-family: Helvetica;
+  font-weight: bolder;
   font-size: 14pt;
-  width: 5in;
+  width: 3.73in;
 }
 
 #nope{
@@ -44,4 +46,8 @@ body {
   background: #98CCE5;
   width: 8.5in;
   height: 11in;
+  column-count: 2;
+}
+.breakColumn {
+  break-before: column;
 }

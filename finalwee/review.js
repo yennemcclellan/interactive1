@@ -218,7 +218,7 @@ function goToTheEnd(){
    },
    {
      text: "BLACK LIVES MATTER! - What the fuck is a black life???? Last time I checked, we're all just people",
-     badness: 0.8,
+     badness: 0.6,
    },
    {
      text: "Trump has blocked me from reading his tweets. I may have to kill myself",
@@ -226,7 +226,7 @@ function goToTheEnd(){
    },
    {
      text: "Going to Africa. Hope I don't get AIDS. Just kidding. I'm white!",
-     badness: 0.9,
+     badness: 0.8,
    },
    {
      text: "I wish we could just kick them all out this country. This is England. Keep it that way",
@@ -249,7 +249,7 @@ function goToTheEnd(){
      }
   }
 
-pront.innerHTML = "<h2>ALLOWED</h2>" + goodHTML +  "<h2>SUSPENDED</h2>" + badHTML
+pront.innerHTML = "<h2>ALLOWED</h2>" + goodHTML +  "<h2 class='breakColumn'>SUSPENDED</h2>" + badHTML
 
 
 
